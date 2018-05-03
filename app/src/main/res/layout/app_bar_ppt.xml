@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.colormatch.Logo">
+    tools:context="com.example.user.colormatch.PPT">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -15,11 +15,11 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@android:color/holo_red_light"
+            android:background="@android:color/holo_orange_dark"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_logo" />
+    <include layout="@layout/content_ppt" />
 
 </android.support.design.widget.CoordinatorLayout>
