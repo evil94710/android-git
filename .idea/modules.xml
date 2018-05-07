@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Colormatch.iml" filepath="$PROJECT_DIR$/Colormatch.iml" />
-      <module fileurl="file://C:\Users\user\AndroidStudioProjects\Colormatch\android-git.iml" filepath="C:\Users\user\AndroidStudioProjects\Colormatch\android-git.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-git.iml" filepath="$PROJECT_DIR$/android-git.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
