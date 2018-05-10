@@ -22,7 +22,8 @@
         <activity
             android:name=".PPT"
             android:label="@string/title_activity_ppt"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".app_home"></activity>
     </application>
 
 </manifest>
