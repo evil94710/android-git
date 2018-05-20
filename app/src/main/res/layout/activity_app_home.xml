@@ -6,4 +6,34 @@
     android:layout_height="match_parent"
     tools:context="com.example.user.colormatch.app_home">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/homee">
+
+        <ImageButton
+            android:id="@+id/logobutton"
+            android:layout_width="188dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:cropToPadding="false"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="360dp"
+            android:scaleType="fitcenter"
+            app:srcCompat="@drawable/logoo" />
+
+        <ImageButton
+            android:id="@+id/pptbutton"
+            android:layout_width="188dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:cropToPadding="false"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="360dp"
+            android:scaleType="fitcenter"
+            app:srcCompat="@drawable/pptt" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
