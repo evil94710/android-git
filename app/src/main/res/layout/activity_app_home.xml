@@ -9,31 +9,41 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:background="@drawable/homee">
+        android:background="@drawable/homee"
+        android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/logobutton"
-            android:layout_width="188dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:cropToPadding="false"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
-            android:paddingTop="360dp"
-            android:scaleType="fitcenter"
-            app:srcCompat="@drawable/logoo" />
+            android:gravity="bottom"
+            android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/pptbutton"
-            android:layout_width="188dp"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:cropToPadding="false"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
-            android:paddingTop="360dp"
-            android:scaleType="fitcenter"
-            app:srcCompat="@drawable/pptt" />
+            <ImageButton
+                android:id="@+id/logobutton"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:cropToPadding="false"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="360dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/logoo" />
+
+            <ImageButton
+                android:id="@+id/pptbutton"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:cropToPadding="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="360dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/pptt" />
+        </LinearLayout>
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
