@@ -17,9 +17,19 @@
             android:layout_height="?attr/actionBarSize"
             android:background="#f06f60"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-
             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|  LOGO  |"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar" />
 
+        <!--TextView裡面的東西就是那行多出來ㄉLOGO喔哈哈哈大笑-->
+        <!--然後AndroidManifest.xml裡面的Label設定為""，這樣才不會同時顯示兩個LOGO：Ｄ同理於PPT，只是我還沒改那邊的Toolbar-->
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_logo" />
