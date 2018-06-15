@@ -18,11 +18,11 @@
         </activity>
         <activity
             android:name=".Logo"
-            android:label=""
+            android:label="LOGO"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".PPT"
-            android:label=""
+            android:label="PPT"
             android:theme="@style/AppTheme.NoActionBar" />
 
     </application>
