@@ -14,7 +14,6 @@ import android.view.MenuItem;
 public class PPT extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private MenuItem BackHome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,16 +21,6 @@ public class PPT extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        BackHome = (MenuItem) findViewById(R.id.action_settings);
-        BackHome.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem menuItem) {
-                Intent intent = new Intent();
-                intent.setClass(PPT.this, app_home.class);
-                startActivity(intent);
-                return false;
-            }
-        });//房子那個icon,回到app_home,會閃退
 
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +67,11 @@ public class PPT extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent intent = new Intent();
+            intent.setClass(PPT.this, app_home.class);
+            startActivity(intent);
+                /* 關閉當前的Activity */
+            PPT.this.finish();
             return true;
         }
 

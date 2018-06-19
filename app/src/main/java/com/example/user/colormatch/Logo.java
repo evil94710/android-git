@@ -1,5 +1,6 @@
 package com.example.user.colormatch;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -19,7 +20,7 @@ public class Logo extends AppCompatActivity
         setContentView(R.layout.activity_logo);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        /*getSupportActionBar().setDisplayShowTitleEnabled(false);*/
+        /*getSupportActionBar().setDisplayShowTitleEnabled(false);*/ //這行代表把Toolbar的Title槓掉
 
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +40,7 @@ public class Logo extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
+
 
     @Override
     public void onBackPressed() {
@@ -66,6 +68,11 @@ public class Logo extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent intent = new Intent();
+            intent.setClass(Logo.this, app_home.class);
+            startActivity(intent);
+                /* 關閉當前的Activity */
+            Logo.this.finish();
             return true;
         }
 
