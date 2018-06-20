@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.pes.androidmaterialcolorpickerdialog.ColorPickerCallback;
@@ -29,6 +30,7 @@ public class add extends AppCompatActivity
     private ImageButton button4;
     private ImageButton button5;
     private Button button;
+    private String colorchange;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,10 +61,15 @@ public class add extends AppCompatActivity
                         TextView green = findViewById(R.id.g1);
                         TextView blue = findViewById(R.id.b1);
                         TextView colorcode = findViewById(R.id.c1);
-                        red.setText(Integer.toString(Color.red(color)));
-                        blue.setText(Integer.toString(Color.blue(color)));
-                        green.setText(Integer.toString(Color.green(color)));
+                        red.setText("R : " + Integer.toString(Color.red(color)));
+                        blue.setText("G : " + Integer.toString(Color.blue(color)));
+                        green.setText("B : " + Integer.toString(Color.green(color)));
                         colorcode.setText(String.format("#%06X", (0xFFFFFF & color)));
+
+                        colorchange = String.format("#%06X", (0xFFFFFF & color));
+                        ImageButton ib1 = findViewById(R.id.ib1);
+                        ib1.setBackgroundColor(Color.parseColor(colorchange));
+
                         /*String red = Integer.toString(Color.red(color));
                         String blue = Integer.toString(Color.blue(color));
                         String green = Integer.toString(Color.green(color));
@@ -91,10 +98,14 @@ public class add extends AppCompatActivity
                         TextView green = findViewById(R.id.g2);
                         TextView blue = findViewById(R.id.b2);
                         TextView colorcode = findViewById(R.id.c2);
-                        red.setText(Integer.toString(Color.red(color)));
-                        blue.setText(Integer.toString(Color.blue(color)));
-                        green.setText(Integer.toString(Color.green(color)));
+                        red.setText("R : " + Integer.toString(Color.red(color)));
+                        blue.setText("G : " + Integer.toString(Color.blue(color)));
+                        green.setText("B : " + Integer.toString(Color.green(color)));
                         colorcode.setText(String.format("#%06X", (0xFFFFFF & color)));
+
+                        colorchange = String.format("#%06X", (0xFFFFFF & color));
+                        ImageButton ib2 = findViewById(R.id.ib2);
+                        ib2.setBackgroundColor(Color.parseColor(colorchange));
                         /*String red = Integer.toString(Color.red(color));
                         String blue = Integer.toString(Color.blue(color));
                         String green = Integer.toString(Color.green(color));
@@ -123,10 +134,14 @@ public class add extends AppCompatActivity
                         TextView green = findViewById(R.id.g3);
                         TextView blue = findViewById(R.id.b3);
                         TextView colorcode = findViewById(R.id.c3);
-                        red.setText(Integer.toString(Color.red(color)));
-                        blue.setText(Integer.toString(Color.blue(color)));
-                        green.setText(Integer.toString(Color.green(color)));
+                        red.setText("R : " + Integer.toString(Color.red(color)));
+                        blue.setText("G : " + Integer.toString(Color.blue(color)));
+                        green.setText("B : " + Integer.toString(Color.green(color)));
                         colorcode.setText(String.format("#%06X", (0xFFFFFF & color)));
+
+                        colorchange = String.format("#%06X", (0xFFFFFF & color));
+                        ImageButton ib3 = findViewById(R.id.ib3);
+                        ib3.setBackgroundColor(Color.parseColor(colorchange));
                         /*String red = Integer.toString(Color.red(color));
                         String blue = Integer.toString(Color.blue(color));
                         String green = Integer.toString(Color.green(color));
@@ -155,10 +170,14 @@ public class add extends AppCompatActivity
                         TextView green = findViewById(R.id.g4);
                         TextView blue = findViewById(R.id.b4);
                         TextView colorcode = findViewById(R.id.c4);
-                        red.setText(Integer.toString(Color.red(color)));
-                        blue.setText(Integer.toString(Color.blue(color)));
-                        green.setText(Integer.toString(Color.green(color)));
+                        red.setText("R : " + Integer.toString(Color.red(color)));
+                        blue.setText("G : " + Integer.toString(Color.blue(color)));
+                        green.setText("B : " + Integer.toString(Color.green(color)));
                         colorcode.setText(String.format("#%06X", (0xFFFFFF & color)));
+
+                        colorchange = String.format("#%06X", (0xFFFFFF & color));
+                        ImageButton ib4 = findViewById(R.id.ib4);
+                        ib4.setBackgroundColor(Color.parseColor(colorchange));
                         /*String red = Integer.toString(Color.red(color));
                         String blue = Integer.toString(Color.blue(color));
                         String green = Integer.toString(Color.green(color));
@@ -187,10 +206,14 @@ public class add extends AppCompatActivity
                         TextView green = findViewById(R.id.g5);
                         TextView blue = findViewById(R.id.b5);
                         TextView colorcode = findViewById(R.id.c5);
-                        red.setText(Integer.toString(Color.red(color)));
-                        blue.setText(Integer.toString(Color.blue(color)));
-                        green.setText(Integer.toString(Color.green(color)));
+                        red.setText("R : " + Integer.toString(Color.red(color)));
+                        blue.setText("G : " + Integer.toString(Color.blue(color)));
+                        green.setText("B : " + Integer.toString(Color.green(color)));
                         colorcode.setText(String.format("#%06X", (0xFFFFFF & color)));
+
+                        colorchange = String.format("#%06X", (0xFFFFFF & color));
+                        ImageButton ib5 = findViewById(R.id.ib5);
+                        ib5.setBackgroundColor(Color.parseColor(colorchange));
                         /*String red = Integer.toString(Color.red(color));
                         String blue = Integer.toString(Color.blue(color));
                         String green = Integer.toString(Color.green(color));

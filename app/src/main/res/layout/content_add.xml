@@ -23,13 +23,15 @@
                 android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@color/materialcolorpicker__white" />
+                android:src="@drawable/login_image_button"
+                android:background=" #FFFFFFFF" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
 
                 <TextView
                     android:id="@+id/r1"
@@ -71,13 +73,15 @@
                 android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@color/materialcolorpicker__white" />
+                android:src="@drawable/login_image_button"
+                android:background=" #FFFFFFFF" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
 
                 <TextView
                     android:id="@+id/r2"
@@ -119,13 +123,15 @@
                 android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@color/materialcolorpicker__white" />
+                android:src="@drawable/login_image_button"
+                android:background=" #FFFFFFFF" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
 
                 <TextView
                     android:id="@+id/r3"
@@ -167,13 +173,15 @@
                 android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@color/materialcolorpicker__white" />
+                android:src="@drawable/login_image_button"
+                android:background=" #FFFFFFFF" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
 
                 <TextView
                     android:id="@+id/r4"
@@ -215,13 +223,15 @@
                 android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@color/materialcolorpicker__white" />
+                android:src="@drawable/login_image_button"
+                android:background=" #FFFFFFFF" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
 
                 <TextView
                     android:id="@+id/r5"
