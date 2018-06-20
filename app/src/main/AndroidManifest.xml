@@ -19,7 +19,8 @@
         <activity
             android:name=".Logo"
             android:label="|  LOGO  |"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:largeHeap="true"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PPT"
             android:label="|  PPT  |"
