@@ -4,27 +4,32 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
-import android.util.Log;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.pes.androidmaterialcolorpickerdialog.ColorPickerCallback;
 
 public class add extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private ImageButton button1;
+    private ImageButton button2;
+    private ImageButton button3;
+    private ImageButton button4;
+    private ImageButton button5;
     private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,8 +46,8 @@ public class add extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         final ColorPicker cp = new ColorPicker(add.this, 0, 0, 0, 0);
-        button = findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        button1 = (ImageButton) findViewById(R.id.ib1);
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 cp.show();
@@ -50,7 +55,15 @@ public class add extends AppCompatActivity
                 cp.setCallback(new ColorPickerCallback() {
                     @Override
                     public void onColorChosen(int color) {
-                        String red = Integer.toString(Color.red(color));
+                        TextView red = findViewById(R.id.r1);
+                        TextView green = findViewById(R.id.g1);
+                        TextView blue = findViewById(R.id.b1);
+                        TextView colorcode = findViewById(R.id.c1);
+                        red.setText(Integer.toString(Color.red(color)));
+                        blue.setText(Integer.toString(Color.blue(color)));
+                        green.setText(Integer.toString(Color.green(color)));
+                        colorcode.setText(String.format("#%06X", (0xFFFFFF & color)));
+                        /*String red = Integer.toString(Color.red(color));
                         String blue = Integer.toString(Color.blue(color));
                         String green = Integer.toString(Color.green(color));
                         Log.d("Alpha", Integer.toString(Color.alpha(color)));
@@ -60,9 +73,144 @@ public class add extends AppCompatActivity
 
                         Log.d("Pure Hex", Integer.toHexString(color));
                         Log.d("#Hex no alpha", String.format("#%06X", (0xFFFFFF & color)));
-                        Log.d("#Hex with alpha", String.format("#%08X", (0xFFFFFFFF & color)));
+                        Log.d("#Hex with alpha", String.format("#%08X", (0xFFFFFFFF & color)));*/
                     }
                 });
+            }
+        });
+        button2 = (ImageButton) findViewById(R.id.ib2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cp.show();
+                cp.enableAutoClose();
+                cp.setCallback(new ColorPickerCallback() {
+                    @Override
+                    public void onColorChosen(int color) {
+                        TextView red = findViewById(R.id.r2);
+                        TextView green = findViewById(R.id.g2);
+                        TextView blue = findViewById(R.id.b2);
+                        TextView colorcode = findViewById(R.id.c2);
+                        red.setText(Integer.toString(Color.red(color)));
+                        blue.setText(Integer.toString(Color.blue(color)));
+                        green.setText(Integer.toString(Color.green(color)));
+                        colorcode.setText(String.format("#%06X", (0xFFFFFF & color)));
+                        /*String red = Integer.toString(Color.red(color));
+                        String blue = Integer.toString(Color.blue(color));
+                        String green = Integer.toString(Color.green(color));
+                        Log.d("Alpha", Integer.toString(Color.alpha(color)));
+                        Log.d("Red", red);
+                        Log.d("Blue", green);
+                        Log.d("Green", blue);
+
+                        Log.d("Pure Hex", Integer.toHexString(color));
+                        Log.d("#Hex no alpha", String.format("#%06X", (0xFFFFFF & color)));
+                        Log.d("#Hex with alpha", String.format("#%08X", (0xFFFFFFFF & color)));*/
+                    }
+                });
+            }
+        });
+        button3 = (ImageButton) findViewById(R.id.ib3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cp.show();
+                cp.enableAutoClose();
+                cp.setCallback(new ColorPickerCallback() {
+                    @Override
+                    public void onColorChosen(int color) {
+                        TextView red = findViewById(R.id.r3);
+                        TextView green = findViewById(R.id.g3);
+                        TextView blue = findViewById(R.id.b3);
+                        TextView colorcode = findViewById(R.id.c3);
+                        red.setText(Integer.toString(Color.red(color)));
+                        blue.setText(Integer.toString(Color.blue(color)));
+                        green.setText(Integer.toString(Color.green(color)));
+                        colorcode.setText(String.format("#%06X", (0xFFFFFF & color)));
+                        /*String red = Integer.toString(Color.red(color));
+                        String blue = Integer.toString(Color.blue(color));
+                        String green = Integer.toString(Color.green(color));
+                        Log.d("Alpha", Integer.toString(Color.alpha(color)));
+                        Log.d("Red", red);
+                        Log.d("Blue", green);
+                        Log.d("Green", blue);
+
+                        Log.d("Pure Hex", Integer.toHexString(color));
+                        Log.d("#Hex no alpha", String.format("#%06X", (0xFFFFFF & color)));
+                        Log.d("#Hex with alpha", String.format("#%08X", (0xFFFFFFFF & color)));*/
+                    }
+                });
+            }
+        });
+        button4 = (ImageButton) findViewById(R.id.ib4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cp.show();
+                cp.enableAutoClose();
+                cp.setCallback(new ColorPickerCallback() {
+                    @Override
+                    public void onColorChosen(int color) {
+                        TextView red = findViewById(R.id.r4);
+                        TextView green = findViewById(R.id.g4);
+                        TextView blue = findViewById(R.id.b4);
+                        TextView colorcode = findViewById(R.id.c4);
+                        red.setText(Integer.toString(Color.red(color)));
+                        blue.setText(Integer.toString(Color.blue(color)));
+                        green.setText(Integer.toString(Color.green(color)));
+                        colorcode.setText(String.format("#%06X", (0xFFFFFF & color)));
+                        /*String red = Integer.toString(Color.red(color));
+                        String blue = Integer.toString(Color.blue(color));
+                        String green = Integer.toString(Color.green(color));
+                        Log.d("Alpha", Integer.toString(Color.alpha(color)));
+                        Log.d("Red", red);
+                        Log.d("Blue", green);
+                        Log.d("Green", blue);
+
+                        Log.d("Pure Hex", Integer.toHexString(color));
+                        Log.d("#Hex no alpha", String.format("#%06X", (0xFFFFFF & color)));
+                        Log.d("#Hex with alpha", String.format("#%08X", (0xFFFFFFFF & color)));*/
+                    }
+                });
+            }
+        });
+        button5 = (ImageButton) findViewById(R.id.ib5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cp.show();
+                cp.enableAutoClose();
+                cp.setCallback(new ColorPickerCallback() {
+                    @Override
+                    public void onColorChosen(int color) {
+                        TextView red = findViewById(R.id.r5);
+                        TextView green = findViewById(R.id.g5);
+                        TextView blue = findViewById(R.id.b5);
+                        TextView colorcode = findViewById(R.id.c5);
+                        red.setText(Integer.toString(Color.red(color)));
+                        blue.setText(Integer.toString(Color.blue(color)));
+                        green.setText(Integer.toString(Color.green(color)));
+                        colorcode.setText(String.format("#%06X", (0xFFFFFF & color)));
+                        /*String red = Integer.toString(Color.red(color));
+                        String blue = Integer.toString(Color.blue(color));
+                        String green = Integer.toString(Color.green(color));
+                        Log.d("Alpha", Integer.toString(Color.alpha(color)));
+                        Log.d("Red", red);
+                        Log.d("Blue", green);
+                        Log.d("Green", blue);
+
+                        Log.d("Pure Hex", Integer.toHexString(color));
+                        Log.d("#Hex no alpha", String.format("#%06X", (0xFFFFFF & color)));
+                        Log.d("#Hex with alpha", String.format("#%08X", (0xFFFFFFFF & color)));*/
+                    }
+                });
+            }
+        });
+        button = findViewById(R.id.add);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
             }
         });
     }
