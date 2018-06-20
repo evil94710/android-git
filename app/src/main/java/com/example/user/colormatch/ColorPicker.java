@@ -37,11 +37,6 @@ public class ColorPicker extends Dialog implements SeekBar.OnSeekBarChangeListen
     private boolean withAlpha;
     private boolean autoclose;
 
-    /**
-     * Creator of the class. It will initialize the class with black color as default
-     *
-     * @param activity The reference to the activity where the color picker is called
-     */
     public ColorPicker(Activity activity) {
         super(activity);
 
@@ -106,7 +101,6 @@ public class ColorPicker extends Dialog implements SeekBar.OnSeekBarChangeListen
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
             requestWindowFeature(Window.FEATURE_NO_TITLE);
         }
-
         setContentView(com.pes.androidmaterialcolorpickerdialog.R.layout.materialcolorpicker__layout_color_picker);
 
         colorView = findViewById(com.pes.androidmaterialcolorpickerdialog.R.id.colorView);
@@ -149,7 +143,6 @@ public class ColorPicker extends Dialog implements SeekBar.OnSeekBarChangeListen
             @Override
             public void onClick(View view) {
                 sendColor();
-
             }
         });
     }

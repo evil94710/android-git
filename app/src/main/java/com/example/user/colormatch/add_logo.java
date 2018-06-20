@@ -2,6 +2,7 @@ package com.example.user.colormatch;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +16,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
+import com.pes.androidmaterialcolorpickerdialog.ColorPickerCallback;
 
 public class add_logo extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -35,16 +38,29 @@ public class add_logo extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        final ColorPicker colorPicker = new ColorPicker(this);
+        final ColorPicker cp = new ColorPicker(add_logo.this, 0, 0, 0, 0);
         button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                colorPicker.show();
-                String red = Integer.toString(colorPicker.getRed());
-                String blue = Integer.toString(colorPicker.getBlue());
-                String green = Integer.toString(colorPicker.getGreen());
-                Log.i("log ", red + blue + green);
+                cp.show();
+                cp.enableAutoClose();
+                cp.setCallback(new ColorPickerCallback() {
+                    @Override
+                    public void onColorChosen(int color) {
+                        String red = Integer.toString(Color.red(color));
+                        String blue = Integer.toString(Color.blue(color));
+                        String green = Integer.toString(Color.green(color));
+                        Log.d("Alpha", Integer.toString(Color.alpha(color)));
+                        Log.d("Red", red);
+                        Log.d("Blue", green);
+                        Log.d("Green", blue);
+
+                        Log.d("Pure Hex", Integer.toHexString(color));
+                        Log.d("#Hex no alpha", String.format("#%06X", (0xFFFFFF & color)));
+                        Log.d("#Hex with alpha", String.format("#%08X", (0xFFFFFFFF & color)));
+                    }
+                });
             }
         });
     }
