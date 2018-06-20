@@ -92,14 +92,9 @@ public class Logo extends AppCompatActivity
             intent.setClass(Logo.this, Collect.class);
             startActivity(intent);
             Logo.this.finish();
-        } else if (id == R.id.add_ppt) {
+        } else if (id == R.id.add) {
             Intent intent = new Intent();
-            intent.setClass(Logo.this, add_ppt.class);
-            startActivity(intent);
-            Logo.this.finish();
-        } else if (id == R.id.add_logo) {
-            Intent intent = new Intent();
-            intent.setClass(Logo.this, add_logo.class);
+            intent.setClass(Logo.this, add.class);
             startActivity(intent);
             Logo.this.finish();
         }  else if (id==R.id.about){

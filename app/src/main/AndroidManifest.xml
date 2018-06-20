@@ -30,12 +30,8 @@
             android:label="@string/title_activity_collect"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".add_ppt"
-            android:label="@string/title_activity_add_ppt"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".add_logo"
-            android:label="@string/title_activity_add_logo"
+            android:name=".add"
+            android:label="@string/title_activity_add"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

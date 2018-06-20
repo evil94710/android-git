@@ -2,10 +2,12 @@ package com.example.user.colormatch;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,25 +17,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
-public class add_ppt extends AppCompatActivity
+import com.pes.androidmaterialcolorpickerdialog.ColorPickerCallback;
+
+public class add extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_ppt);
+        setContentView(R.layout.activity_add);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -43,6 +40,31 @@ public class add_ppt extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        final ColorPicker cp = new ColorPicker(add.this, 0, 0, 0, 0);
+        button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cp.show();
+                cp.enableAutoClose();
+                cp.setCallback(new ColorPickerCallback() {
+                    @Override
+                    public void onColorChosen(int color) {
+                        String red = Integer.toString(Color.red(color));
+                        String blue = Integer.toString(Color.blue(color));
+                        String green = Integer.toString(Color.green(color));
+                        Log.d("Alpha", Integer.toString(Color.alpha(color)));
+                        Log.d("Red", red);
+                        Log.d("Blue", green);
+                        Log.d("Green", blue);
+
+                        Log.d("Pure Hex", Integer.toHexString(color));
+                        Log.d("#Hex no alpha", String.format("#%06X", (0xFFFFFF & color)));
+                        Log.d("#Hex with alpha", String.format("#%08X", (0xFFFFFFFF & color)));
+                    }
+                });
+            }
+        });
     }
 
     @Override
@@ -58,7 +80,7 @@ public class add_ppt extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.add_ppt, menu);
+        getMenuInflater().inflate(R.menu.add, menu);
         return true;
     }
 
@@ -72,10 +94,10 @@ public class add_ppt extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             Intent intent = new Intent();
-            intent.setClass(add_ppt.this, app_home.class);
+            intent.setClass(add.this, app_home.class);
             startActivity(intent);
             /* 關閉當前的Activity */
-            add_ppt.this.finish();
+            add.this.finish();
             return true;
         }
 
@@ -90,20 +112,15 @@ public class add_ppt extends AppCompatActivity
 
         if (id == R.id.favorite) {
             Intent intent = new Intent();
-            intent.setClass(add_ppt.this, Collect.class);
+            intent.setClass(add.this, Collect.class);
             startActivity(intent);
-            add_ppt.this.finish();
+            add.this.finish();
             // Handle the camera action
-        } else if (id == R.id.add_ppt) {
+        }  else if (id == R.id.add) {
             Intent intent = new Intent();
-            intent.setClass(add_ppt.this, add_ppt.class);
+            intent.setClass(add.this, add.class);
             startActivity(intent);
-            add_ppt.this.finish();
-        } else if (id == R.id.add_logo) {
-            Intent intent = new Intent();
-            intent.setClass(add_ppt.this, add_logo.class);
-            startActivity(intent);
-            add_ppt.this.finish();
+            add.this.finish();
         } else if (id==R.id.about){
             AlertDialog.Builder ad = new AlertDialog.Builder(this);
             ad.setTitle("關於卡樂");

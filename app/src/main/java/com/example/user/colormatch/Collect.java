@@ -94,14 +94,9 @@ public class Collect extends AppCompatActivity
             startActivity(intent);
             Collect.this.finish();
             // Handle the camera action
-        } else if (id == R.id.add_ppt) {
+        } else if (id == R.id.add) {
             Intent intent = new Intent();
-            intent.setClass(Collect.this, add_ppt.class);
-            startActivity(intent);
-            Collect.this.finish();
-        } else if (id == R.id.add_logo) {
-            Intent intent = new Intent();
-            intent.setClass(Collect.this, add_logo.class);
+            intent.setClass(Collect.this, add.class);
             startActivity(intent);
             Collect.this.finish();
         } else if (id==R.id.about){

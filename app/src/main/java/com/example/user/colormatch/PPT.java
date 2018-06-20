@@ -94,17 +94,12 @@ public class PPT extends AppCompatActivity
             startActivity(intent);
             PPT.this.finish();
             // Handle the camera action
-        } else if (id == R.id.add_ppt) {
+        } else if (id == R.id.add) {
             Intent intent = new Intent();
-            intent.setClass(PPT.this, add_ppt.class);
+            intent.setClass(PPT.this, add.class);
             startActivity(intent);
             PPT.this.finish();
-        } else if (id == R.id.add_logo) {
-            Intent intent = new Intent();
-            intent.setClass(PPT.this, add_logo.class);
-            startActivity(intent);
-            PPT.this.finish();
-        } else if (id==R.id.about){
+        }  else if (id==R.id.about){
             AlertDialog.Builder ad = new AlertDialog.Builder(this);
             ad.setTitle("關於卡樂");
             ad.setMessage("Author:\n" +  " 李香蘭\n" + " 張天音\n " + "蔣亞恬\n");
