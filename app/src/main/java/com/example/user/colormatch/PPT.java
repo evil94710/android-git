@@ -89,9 +89,21 @@ public class PPT extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.favorite) {
+            Intent intent = new Intent();
+            intent.setClass(PPT.this, Collect.class);
+            startActivity(intent);
+            PPT.this.finish();
             // Handle the camera action
-        } else if (id == R.id.nav_share) {
-
+        } else if (id == R.id.add_ppt) {
+            Intent intent = new Intent();
+            intent.setClass(PPT.this, add_ppt.class);
+            startActivity(intent);
+            PPT.this.finish();
+        } else if (id == R.id.add_logo) {
+            Intent intent = new Intent();
+            intent.setClass(PPT.this, add_logo.class);
+            startActivity(intent);
+            PPT.this.finish();
         } else if (id==R.id.about){
             AlertDialog.Builder ad = new AlertDialog.Builder(this);
             ad.setTitle("關於卡樂");

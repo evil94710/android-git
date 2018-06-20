@@ -3,26 +3,28 @@ package com.example.user.colormatch;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
+import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Logo extends AppCompatActivity
+public class Collect extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_logo);
+        setContentView(R.layout.activity_collect);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        /*getSupportActionBar().setDisplayShowTitleEnabled(false);*/ //這行代表把Toolbar的Title槓掉
 
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +45,6 @@ public class Logo extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
-
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -57,7 +58,7 @@ public class Logo extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.logo, menu);
+        getMenuInflater().inflate(R.menu.collect, menu);
         return true;
     }
 
@@ -71,10 +72,10 @@ public class Logo extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             Intent intent = new Intent();
-            intent.setClass(Logo.this, app_home.class);
+            intent.setClass(Collect.this, app_home.class);
             startActivity(intent);
-                /* 關閉當前的Activity */
-            Logo.this.finish();
+            /* 關閉當前的Activity */
+            Collect.this.finish();
             return true;
         }
 
@@ -89,20 +90,21 @@ public class Logo extends AppCompatActivity
 
         if (id == R.id.favorite) {
             Intent intent = new Intent();
-            intent.setClass(Logo.this, Collect.class);
+            intent.setClass(Collect.this, Collect.class);
             startActivity(intent);
-            Logo.this.finish();
+            Collect.this.finish();
+            // Handle the camera action
         } else if (id == R.id.add_ppt) {
             Intent intent = new Intent();
-            intent.setClass(Logo.this, add_ppt.class);
+            intent.setClass(Collect.this, add_ppt.class);
             startActivity(intent);
-            Logo.this.finish();
+            Collect.this.finish();
         } else if (id == R.id.add_logo) {
             Intent intent = new Intent();
-            intent.setClass(Logo.this, add_logo.class);
+            intent.setClass(Collect.this, add_logo.class);
             startActivity(intent);
-            Logo.this.finish();
-        }  else if (id==R.id.about){
+            Collect.this.finish();
+        } else if (id==R.id.about){
             AlertDialog.Builder ad = new AlertDialog.Builder(this);
             ad.setTitle("關於卡樂");
             ad.setMessage("Author:\n" +  " 李香蘭\n" + " 張天音\n " + "蔣亞恬\n");

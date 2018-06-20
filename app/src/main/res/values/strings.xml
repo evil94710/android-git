@@ -6,4 +6,10 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_ppt">PPT</string>
+    <string name="title_activity_collect">配色收藏</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_add_ppt">新增配色-PPT</string>
+    <string name="title_activity_add_logo">新增配色-Logo</string>
 </resources>
