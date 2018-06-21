@@ -227,12 +227,12 @@ public class add extends AppCompatActivity
                             DataSnapshot dsB5 = dataSnapshot.child("B5");
 
                         }*/
-                        String r1 = R1.getText().toString();
-                        String r2 = R2.getText().toString();
-                        String r3 = R3.getText().toString();
-                        String r4 = R4.getText().toString();
-                        String r5 = R5.getText().toString();
-                        String g1 = G1.getText().toString();
+                        String r1 = C1.getText().toString();
+                        String r2 = C2.getText().toString();
+                        String r3 = C3.getText().toString();
+                        String r4 = C4.getText().toString();
+                        String r5 = C5.getText().toString();
+                        /*String g1 = G1.getText().toString();
                         String g2 = G2.getText().toString();
                         String g3 = G3.getText().toString();
                         String g4 = G4.getText().toString();
@@ -241,12 +241,12 @@ public class add extends AppCompatActivity
                         String b2 = B2.getText().toString();
                         String b3 = B3.getText().toString();
                         String b4 = B4.getText().toString();
-                        String b5 = B5.getText().toString();
+                        String b5 = B5.getText().toString();*/
                         long n = dataSnapshot.getChildrenCount();
                         String num = String.valueOf(n);
-                        /*DatabaseReference ref = myref.child(num);
-                        colorData colorData = new colorData(Name,r1,r2,r3,r4,r5,g1,g2,g3,g4,g5,b1,b2,b3,b4,b5);
-                        ref.setValue(colorData);*/
+                        DatabaseReference ref = myref.child(num);
+                        colorData colorData = new colorData(Name,r1,r2,r3,r4,r5);
+                        ref.setValue(colorData);
                         //Log.d("total",String.valueOf(n));
                     }
 
