@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -218,6 +219,8 @@ public class add extends AppCompatActivity
                         String Name = name.getText().toString();
                         colorData colorData = new colorData(Name,r1,r2,r3,r4,r5);
                         myref.child("10").setValue(colorData);
+                        Toast.makeText(add.this,"Add finished.",Toast.LENGTH_LONG).show();
+
                     }
 
                     @Override
@@ -228,7 +231,7 @@ public class add extends AppCompatActivity
             }
         });
     }
-
+    
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
