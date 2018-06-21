@@ -8,4 +8,8 @@
     tools:context=".Collect"
     tools:showIn="@layout/app_bar_collect">
 
+    <ListView
+        android:id="@+id/lv_collect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </android.support.constraint.ConstraintLayout>
