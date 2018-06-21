@@ -11,6 +11,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -55,6 +56,7 @@ public class add extends AppCompatActivity
     private TextView C4;
     private TextView C5;
     private Button button;
+    private EditText name;
     private String colorchange;
 
     @Override
@@ -197,8 +199,8 @@ public class add extends AppCompatActivity
                 });
             }
         });
-        final EditText name = findViewById(R.id.name);
-        final String Name = name.getText().toString();
+        name = findViewById(R.id.name);
+
         button = findViewById(R.id.add);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -208,46 +210,14 @@ public class add extends AppCompatActivity
                 myref.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
-                        /*for(dataSnapshot : dataSnapshot.getChildren()){
-                            DataSnapshot dsName = dataSnapshot.child("Name");
-                            DataSnapshot dsR1 = dataSnapshot.child("R1");
-                            DataSnapshot dsR2 = dataSnapshot.child("R2");
-                            DataSnapshot dsR3 = dataSnapshot.child("R3");
-                            DataSnapshot dsR4 = dataSnapshot.child("R4");
-                            DataSnapshot dsR5 = dataSnapshot.child("R5");
-                            DataSnapshot dsG1 = dataSnapshot.child("G1");
-                            DataSnapshot dsG2 = dataSnapshot.child("G2");
-                            DataSnapshot dsG3 = dataSnapshot.child("G3");
-                            DataSnapshot dsG4 = dataSnapshot.child("G4");
-                            DataSnapshot dsG5 = dataSnapshot.child("G5");
-                            DataSnapshot dsB1 = dataSnapshot.child("B1");
-                            DataSnapshot dsB2 = dataSnapshot.child("B2");
-                            DataSnapshot dsB3 = dataSnapshot.child("B3");
-                            DataSnapshot dsB4 = dataSnapshot.child("B4");
-                            DataSnapshot dsB5 = dataSnapshot.child("B5");
-
-                        }*/
                         String r1 = C1.getText().toString();
                         String r2 = C2.getText().toString();
                         String r3 = C3.getText().toString();
                         String r4 = C4.getText().toString();
                         String r5 = C5.getText().toString();
-                        /*String g1 = G1.getText().toString();
-                        String g2 = G2.getText().toString();
-                        String g3 = G3.getText().toString();
-                        String g4 = G4.getText().toString();
-                        String g5 = G5.getText().toString();
-                        String b1 = B1.getText().toString();
-                        String b2 = B2.getText().toString();
-                        String b3 = B3.getText().toString();
-                        String b4 = B4.getText().toString();
-                        String b5 = B5.getText().toString();*/
-                        long n = dataSnapshot.getChildrenCount();
-                        String num = String.valueOf(n);
-                        DatabaseReference ref = myref.child(num);
+                        String Name = name.getText().toString();
                         colorData colorData = new colorData(Name,r1,r2,r3,r4,r5);
-                        ref.setValue(colorData);
-                        //Log.d("total",String.valueOf(n));
+                        myref.child("10").setValue(colorData);
                     }
 
                     @Override
