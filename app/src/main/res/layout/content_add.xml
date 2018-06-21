@@ -8,263 +8,293 @@
     tools:context=".add"
     tools:showIn="@layout/app_bar_add">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/ib1"
-                android:layout_width="160dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/login_image_button"
-                android:background=" #FFFFFFFF" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingLeft="5dp">
-
-                <TextView
-                    android:id="@+id/r1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="R : 255" />
-
-                <TextView
-                    android:id="@+id/g1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="G : 255" />
-
-                <TextView
-                    android:id="@+id/b1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="B : 255" />
-
-                <TextView
-                    android:id="@+id/c1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="#FFFFFF" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/ib2"
-                android:layout_width="160dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/login_image_button"
-                android:background=" #FFFFFFFF" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingLeft="5dp">
-
-                <TextView
-                    android:id="@+id/r2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="R : 255" />
-
-                <TextView
-                    android:id="@+id/g2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="G : 255" />
-
-                <TextView
-                    android:id="@+id/b2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="B : 255" />
-
-                <TextView
-                    android:id="@+id/c2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="#FFFFFF" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/ib3"
-                android:layout_width="160dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/login_image_button"
-                android:background=" #FFFFFFFF" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingLeft="5dp">
-
-                <TextView
-                    android:id="@+id/r3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="R : 255" />
-
-                <TextView
-                    android:id="@+id/g3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="G : 255" />
-
-                <TextView
-                    android:id="@+id/b3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="B : 255" />
-
-                <TextView
-                    android:id="@+id/c3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="#FFFFFF" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/ib4"
-                android:layout_width="160dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/login_image_button"
-                android:background=" #FFFFFFFF" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingLeft="5dp">
-
-                <TextView
-                    android:id="@+id/r4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="R : 255" />
-
-                <TextView
-                    android:id="@+id/g4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="G : 255" />
-
-                <TextView
-                    android:id="@+id/b4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="B : 255" />
-
-                <TextView
-                    android:id="@+id/c4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="#FFFFFF" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/ib5"
-                android:layout_width="160dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/login_image_button"
-                android:background=" #FFFFFFFF" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingLeft="5dp">
-
-                <TextView
-                    android:id="@+id/r5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="R : 255" />
-
-                <TextView
-                    android:id="@+id/g5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="G : 255" />
-
-                <TextView
-                    android:id="@+id/b5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="B : 255" />
-
-                <TextView
-                    android:id="@+id/c5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="#FFFFFF" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/add"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="280dp"
-            android:text="Add" />
-    </LinearLayout>
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ib1"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background=" #FFFFFFFF"
+                    android:src="@drawable/login_image_button" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:id="@+id/r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R : 255" />
+
+                    <TextView
+                        android:id="@+id/g1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="G : 255" />
+
+                    <TextView
+                        android:id="@+id/b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B : 255" />
+
+                    <TextView
+                        android:id="@+id/c1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ib2"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background=" #FFFFFFFF"
+                    android:src="@drawable/login_image_button" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:id="@+id/r2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R : 255" />
+
+                    <TextView
+                        android:id="@+id/g2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="G : 255" />
+
+                    <TextView
+                        android:id="@+id/b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B : 255" />
+
+                    <TextView
+                        android:id="@+id/c2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ib3"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background=" #FFFFFFFF"
+                    android:src="@drawable/login_image_button" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:id="@+id/r3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R : 255" />
+
+                    <TextView
+                        android:id="@+id/g3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="G : 255" />
+
+                    <TextView
+                        android:id="@+id/b3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B : 255" />
+
+                    <TextView
+                        android:id="@+id/c3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ib4"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background=" #FFFFFFFF"
+                    android:src="@drawable/login_image_button" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:id="@+id/r4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R : 255" />
+
+                    <TextView
+                        android:id="@+id/g4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="G : 255" />
+
+                    <TextView
+                        android:id="@+id/b4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B : 255" />
+
+                    <TextView
+                        android:id="@+id/c4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ib5"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background=" #FFFFFFFF"
+                    android:src="@drawable/login_image_button" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:id="@+id/r5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R : 255" />
+
+                    <TextView
+                        android:id="@+id/g5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="G : 255" />
+
+                    <TextView
+                        android:id="@+id/b5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B : 255" />
+
+                    <TextView
+                        android:id="@+id/c5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="幫他取個名字"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:text="Add" />
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

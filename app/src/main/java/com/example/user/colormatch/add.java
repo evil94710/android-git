@@ -15,8 +15,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.pes.androidmaterialcolorpickerdialog.ColorPickerCallback;
@@ -69,18 +69,6 @@ public class add extends AppCompatActivity
                         colorchange = String.format("#%06X", (0xFFFFFF & color));
                         ImageButton ib1 = findViewById(R.id.ib1);
                         ib1.setBackgroundColor(Color.parseColor(colorchange));
-
-                        /*String red = Integer.toString(Color.red(color));
-                        String blue = Integer.toString(Color.blue(color));
-                        String green = Integer.toString(Color.green(color));
-                        Log.d("Alpha", Integer.toString(Color.alpha(color)));
-                        Log.d("Red", red);
-                        Log.d("Blue", green);
-                        Log.d("Green", blue);
-
-                        Log.d("Pure Hex", Integer.toHexString(color));
-                        Log.d("#Hex no alpha", String.format("#%06X", (0xFFFFFF & color)));
-                        Log.d("#Hex with alpha", String.format("#%08X", (0xFFFFFFFF & color)));*/
                     }
                 });
             }
@@ -106,17 +94,6 @@ public class add extends AppCompatActivity
                         colorchange = String.format("#%06X", (0xFFFFFF & color));
                         ImageButton ib2 = findViewById(R.id.ib2);
                         ib2.setBackgroundColor(Color.parseColor(colorchange));
-                        /*String red = Integer.toString(Color.red(color));
-                        String blue = Integer.toString(Color.blue(color));
-                        String green = Integer.toString(Color.green(color));
-                        Log.d("Alpha", Integer.toString(Color.alpha(color)));
-                        Log.d("Red", red);
-                        Log.d("Blue", green);
-                        Log.d("Green", blue);
-
-                        Log.d("Pure Hex", Integer.toHexString(color));
-                        Log.d("#Hex no alpha", String.format("#%06X", (0xFFFFFF & color)));
-                        Log.d("#Hex with alpha", String.format("#%08X", (0xFFFFFFFF & color)));*/
                     }
                 });
             }
@@ -142,17 +119,6 @@ public class add extends AppCompatActivity
                         colorchange = String.format("#%06X", (0xFFFFFF & color));
                         ImageButton ib3 = findViewById(R.id.ib3);
                         ib3.setBackgroundColor(Color.parseColor(colorchange));
-                        /*String red = Integer.toString(Color.red(color));
-                        String blue = Integer.toString(Color.blue(color));
-                        String green = Integer.toString(Color.green(color));
-                        Log.d("Alpha", Integer.toString(Color.alpha(color)));
-                        Log.d("Red", red);
-                        Log.d("Blue", green);
-                        Log.d("Green", blue);
-
-                        Log.d("Pure Hex", Integer.toHexString(color));
-                        Log.d("#Hex no alpha", String.format("#%06X", (0xFFFFFF & color)));
-                        Log.d("#Hex with alpha", String.format("#%08X", (0xFFFFFFFF & color)));*/
                     }
                 });
             }
@@ -178,17 +144,6 @@ public class add extends AppCompatActivity
                         colorchange = String.format("#%06X", (0xFFFFFF & color));
                         ImageButton ib4 = findViewById(R.id.ib4);
                         ib4.setBackgroundColor(Color.parseColor(colorchange));
-                        /*String red = Integer.toString(Color.red(color));
-                        String blue = Integer.toString(Color.blue(color));
-                        String green = Integer.toString(Color.green(color));
-                        Log.d("Alpha", Integer.toString(Color.alpha(color)));
-                        Log.d("Red", red);
-                        Log.d("Blue", green);
-                        Log.d("Green", blue);
-
-                        Log.d("Pure Hex", Integer.toHexString(color));
-                        Log.d("#Hex no alpha", String.format("#%06X", (0xFFFFFF & color)));
-                        Log.d("#Hex with alpha", String.format("#%08X", (0xFFFFFFFF & color)));*/
                     }
                 });
             }
@@ -214,21 +169,12 @@ public class add extends AppCompatActivity
                         colorchange = String.format("#%06X", (0xFFFFFF & color));
                         ImageButton ib5 = findViewById(R.id.ib5);
                         ib5.setBackgroundColor(Color.parseColor(colorchange));
-                        /*String red = Integer.toString(Color.red(color));
-                        String blue = Integer.toString(Color.blue(color));
-                        String green = Integer.toString(Color.green(color));
-                        Log.d("Alpha", Integer.toString(Color.alpha(color)));
-                        Log.d("Red", red);
-                        Log.d("Blue", green);
-                        Log.d("Green", blue);
-
-                        Log.d("Pure Hex", Integer.toHexString(color));
-                        Log.d("#Hex no alpha", String.format("#%06X", (0xFFFFFF & color)));
-                        Log.d("#Hex with alpha", String.format("#%08X", (0xFFFFFFFF & color)));*/
                     }
                 });
             }
         });
+        EditText name = findViewById(R.id.name);
+        String Name = name.getText().toString();
         button = findViewById(R.id.add);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
