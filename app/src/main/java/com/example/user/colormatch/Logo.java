@@ -109,6 +109,16 @@ public class Logo extends AppCompatActivity
             };
             ad.setPositiveButton("OK",listener);
             ad.show();
+        } else if (id == R.id.logo){
+            Intent intent = new Intent();
+            intent.setClass(Logo.this, Logo.class);
+            startActivity(intent);
+            Logo.this.finish();
+        } else if (id == R.id.ppt) {
+            Intent intent = new Intent();
+            intent.setClass(Logo.this, PPT.class);
+            startActivity(intent);
+            Logo.this.finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

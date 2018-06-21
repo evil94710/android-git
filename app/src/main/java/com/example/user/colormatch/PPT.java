@@ -111,6 +111,16 @@ public class PPT extends AppCompatActivity
             };
             ad.setPositiveButton("OK",listener);
             ad.show();
+        } else if (id==R.id.logo){
+            Intent intent = new Intent();
+            intent.setClass(PPT.this, Logo.class);
+            startActivity(intent);
+            PPT.this.finish();
+        } else if (id==R.id.ppt){
+            Intent intent = new Intent();
+            intent.setClass(PPT.this, PPT.class);
+            startActivity(intent);
+            PPT.this.finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

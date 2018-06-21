@@ -111,6 +111,16 @@ public class Collect extends AppCompatActivity
             };
             ad.setPositiveButton("OK",listener);
             ad.show();
+        } else if (id == R.id.logo){
+            Intent intent = new Intent();
+            intent.setClass(Collect.this, Logo.class);
+            startActivity(intent);
+            Collect.this.finish();
+        } else if (id == R.id.ppt){
+            Intent intent = new Intent();
+            intent.setClass(Collect.this, PPT.class);
+            startActivity(intent);
+            Collect.this.finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
