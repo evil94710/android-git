@@ -22,7 +22,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="168dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
 
                 <LinearLayout
                     android:layout_width="221dp"
@@ -153,7 +154,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="168dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
 
                 <LinearLayout
                     android:layout_width="223dp"
@@ -396,7 +398,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="168dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
 
                 <LinearLayout
                     android:layout_width="223dp"
@@ -637,7 +640,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="168dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
 
                 <LinearLayout
                     android:layout_width="223dp"
@@ -736,7 +740,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="168dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
 
                 <LinearLayout
                     android:layout_width="223dp"
@@ -863,7 +868,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="168dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
 
                 <LinearLayout
                     android:layout_width="223dp"
@@ -1026,7 +1032,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="168dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
 
                 <LinearLayout
                     android:layout_width="223dp"
@@ -1140,7 +1147,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="168dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
 
                 <ImageView
                     android:layout_width="221dp"
@@ -1296,7 +1304,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="168dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
 
                 <LinearLayout
                     android:layout_width="223dp"

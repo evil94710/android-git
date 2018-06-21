@@ -267,6 +267,24 @@ public class Collect extends AppCompatActivity
             };
             ad.setPositiveButton("OK",listener);
             ad.show();
+        } else if (id == R.id.logo){
+            Intent intent = new Intent();
+            intent.setClass(Collect.this, Logo.class);
+            startActivity(intent);
+            Collect.this.finish();
+        } else if (id == R.id.ppt){
+            Intent intent = new Intent();
+            intent.setClass(Collect.this, PPT.class);
+            startActivity(intent);
+            Collect.this.finish();
+        } else if (id==R.id.share) {
+            Intent intent=new Intent(Intent.ACTION_SEND);
+            intent.setType("image/*");
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Share");
+            intent.putExtra(Intent.EXTRA_TEXT, "逢甲大學 106-2 行動應用程式－卡樂配色！ *問問神奇海螺團隊製作*");
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(Intent.createChooser(intent, getTitle()));
+            /*點下去的觸發事件為網路找的範例XD 其實沒什麼實質上能分享到，單純做爽的XD*/
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
