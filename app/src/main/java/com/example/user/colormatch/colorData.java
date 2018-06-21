@@ -2,15 +2,15 @@ package com.example.user.colormatch;
 
 
 public class colorData {
-    private String name;
+    private String Name;
     private String C1;
     private String C2;
     private String C3;
     private String C4;
     private String C5;
 
-    public colorData(String name, String C1,String C2,String C3,String C4,String C5) {
-        this.name = name;
+    public colorData(String Name, String C1,String C2,String C3,String C4,String C5) {
+        this.Name = Name;
         this.C1 = C1;
         this.C2 = C2;
         this.C3 = C3;
@@ -19,11 +19,11 @@ public class colorData {
     }
 
     public String getName() {
-        return name;
+        return Name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.Name = name;
     }
 
     public String getC1() {

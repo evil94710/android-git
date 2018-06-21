@@ -116,12 +116,12 @@ public class Collect extends AppCompatActivity
         public void run() {
             List<color> lsColor = new ArrayList<>();
             for (DataSnapshot ds : dataSnapshot.getChildren()) {
-                DataSnapshot dsName = ds.child("Name");
-                DataSnapshot dsCode1 = ds.child("colorcode1");
-                DataSnapshot dsCode2 = ds.child("colorcode2");
-                DataSnapshot dsCode3 = ds.child("colorcode3");
-                DataSnapshot dsCode4 = ds.child("colorcode4");
-                DataSnapshot dsCode5 = ds.child("colorcode5");
+                DataSnapshot dsName = ds.child("name");
+                DataSnapshot dsCode1 = ds.child("c1");
+                DataSnapshot dsCode2 = ds.child("c2");
+                DataSnapshot dsCode3 = ds.child("c3");
+                DataSnapshot dsCode4 = ds.child("c4");
+                DataSnapshot dsCode5 = ds.child("c5");
 
                 String Name = (String)dsName.getValue();
                 String code1 = (String)dsCode1.getValue();
